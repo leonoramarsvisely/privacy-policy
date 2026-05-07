@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Amazon Review Exporter</title>
+    <meta
+      name="description"
+      content="Privacy Policy for the Amazon Review Exporter browser extension." />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fb;
+        --surface: #ffffff;
+        --text: #162033;
+        --muted: #5b6577;
+        --line: #d9e0ea;
+        --accent: #0f766e;
+        --accent-soft: #e6f6f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .page {
+        width: min(920px, calc(100vw - 32px));
+        margin: 32px auto;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 10px 30px rgba(22, 32, 51, 0.06);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.25;
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-size: 34px;
+        margin-top: 16px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-top: 24px;
+      }
+
+      p,
+      ul {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .meta {
+        margin-bottom: 20px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .note {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        background: #fff8db;
+        border: 1px solid #f0df8d;
+        color: #685400;
+      }
+
+      code {
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: #eef2f7;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 0.95em;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          width: min(100vw - 20px, 920px);
+          margin: 16px auto;
+        }
+
+        .card {
+          padding: 22px 18px;
+          border-radius: 14px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        h2 {
+          font-size: 21px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <article class="card">
+        <div class="eyebrow">Amazon Review Exporter</div>
+        <h1>Privacy Policy</h1>
+        <div class="meta">Last updated: May 4, 2026</div>
+
+        <p>
+          This Privacy Policy describes how the Amazon Review Exporter browser extension
+          ("Amazon Review Exporter", "the Extension", "we", "us", or "our") handles
+          information when you install and use the Extension.
+        </p>
+
+        <p>
+          Amazon Review Exporter is designed to let users export Amazon product review
+          data into CSV files. The Extension is intended to perform this function locally
+          in the user's browser with minimal data collection and minimal retention.
+        </p>
+
+        <h2>1. Scope</h2>
+        <p>
+          This Privacy Policy applies to the Amazon Review Exporter browser extension,
+          including its popup UI, background processes, content scripts, and local
+          storage used to support review scraping and CSV export.
+        </p>
+        <p>This Privacy Policy does not apply to:</p>
+        <ul>
+          <li>Amazon's own websites, services, or privacy practices</li>
+          <li>Your browser vendor's privacy practices</li>
+          <li>Any third-party websites that you visit outside the Extension</li>
+        </ul>
+
+        <h2>2. Summary</h2>
+        <ul>
+          <li>
+            The Extension reads review-related content from supported Amazon product and
+            review pages when you actively use the Extension.
+          </li>
+          <li>
+            The Extension stores scrape state and scraped review data locally in your
+            browser so it can complete export tasks.
+          </li>
+          <li>
+            The Extension generates CSV files locally and triggers a browser download to
+            your device.
+          </li>
+          <li>The Extension does not sell user data.</li>
+          <li>
+            The Extension does not use user data for advertising, profiling, or
+            analytics.
+          </li>
+          <li>The Extension does not transmit scraped review data to our servers.</li>
+          <li>
+            The Extension currently validates and stores any License Key locally and does
+            not send it to a remote validation server.
+          </li>
+        </ul>
+
+        <h2>3. Information We Handle</h2>
+        <p>
+          Depending on how you use the Extension, the Extension may access or process the
+          following categories of data.
+        </p>
+
+        <h3>3.1 Amazon page and review content</h3>
+        <p>
+          When you use the Extension on a supported Amazon page, the Extension may access
+          and process page content that is necessary to provide its user-facing
+          functionality, including:
+        </p>
+        <ul>
+          <li>Amazon page URL</li>
+          <li>Amazon marketplace domain</li>
+          <li>ASIN</li>
+          <li>Product title</li>
+          <li>Review title</li>
+          <li>Review body text</li>
+          <li>Review author display name</li>
+          <li>Review date text</li>
+          <li>Review rating text</li>
+          <li>Helpful vote count</li>
+          <li>Verified purchase status</li>
+          <li>Review image URLs, if present</li>
+          <li>
+            Product variant information shown in the review context, such as color, size,
+            style, or configuration
+          </li>
+        </ul>
+        <p>
+          This information is processed only to provide the Extension's review scraping
+          and CSV export functionality.
+        </p>
+
+        <h3>3.2 Browser tab and task state information</h3>
+        <p>
+          To start, continue, stop, and complete an export task, the Extension may
+          process:
+        </p>
+        <ul>
+          <li>The active tab ID</li>
+          <li>The active tab URL</li>
+          <li>Review page navigation state</li>
+          <li>Scrape progress state such as current page, total reviews, and task status</li>
+        </ul>
+
+        <h3>3.3 Local configuration information</h3>
+        <p>The Extension may store limited local configuration or state information, including:</p>
+        <ul>
+          <li>Whether an export task is in progress</li>
+          <li>Cached scraped review records</li>
+          <li>License Key entered by the user</li>
+          <li>Locally computed License status</li>
+        </ul>
+
+        <h3>3.4 Information We Do Not Intentionally Collect</h3>
+        <p>The Extension is not designed to collect or process:</p>
+        <ul>
+          <li>Passwords</li>
+          <li>Payment card information</li>
+          <li>Authentication cookies</li>
+          <li>Personal emails or messages</li>
+          <li>Contacts</li>
+          <li>Health data</li>
+          <li>Precise geolocation</li>
+        </ul>
+        <p>
+          The Extension is also not designed to read unrelated browsing content outside
+          supported Amazon pages for its core functionality.
+        </p>
+
+        <h2>4. How We Use Information</h2>
+        <p>
+          We use the information handled by the Extension solely to provide and support
+          the Extension's single user-facing purpose: exporting Amazon review data into
+          CSV files.
+        </p>
+        <p>More specifically, the Extension uses information to:</p>
+        <ul>
+          <li>Detect whether the current page is a supported Amazon product page or review page</li>
+          <li>Build or open the correct Amazon review page for the selected product</li>
+          <li>Read review content from the page</li>
+          <li>Continue scraping across review pages when needed</li>
+          <li>Store in-progress task state locally so exports can continue reliably</li>
+          <li>Generate CSV content locally</li>
+          <li>Trigger a file download in the browser</li>
+          <li>Store and apply local License status, if the user enters a License Key</li>
+        </ul>
+        <p>We do not use handled data to:</p>
+        <ul>
+          <li>Build advertising profiles</li>
+          <li>Serve personalized ads</li>
+          <li>Retarget users</li>
+          <li>Sell or rent data</li>
+          <li>Create unrelated analytics datasets</li>
+          <li>Train models on your data</li>
+        </ul>
+
+        <h2>5. Where Data Is Stored</h2>
+        <p>
+          The Extension is designed to store operational data locally in the user's
+          browser environment.
+        </p>
+        <p>This may include:</p>
+        <ul>
+          <li>Review scrape task state stored in browser extension local storage</li>
+          <li>Scraped review records stored in browser extension local storage</li>
+          <li>License Key and local License state stored in browser extension local storage</li>
+          <li>Exported CSV files downloaded to the user's device through the browser download flow</li>
+        </ul>
+
+        <h2>6. Data Transmission and Sharing</h2>
+        <h3>6.1 Transmission to our servers</h3>
+        <p>
+          At the time of this policy's last update, the Extension does not transmit
+          scraped review content, exported CSV content, or browser task state to our
+          servers.
+        </p>
+        <p>
+          At the time of this policy's last update, the Extension also does not use a
+          remote server to validate License Keys. License validation is handled locally
+          by the Extension code.
+        </p>
+
+        <h3>6.2 Sharing with third parties</h3>
+        <p>
+          We do not sell, rent, or transfer handled data to data brokers, advertisers,
+          or analytics providers.
+        </p>
+        <p>The Extension may interact with:</p>
+        <ul>
+          <li>Amazon pages that the user visits</li>
+          <li>The browser's extension APIs, such as storage, tabs, and downloads</li>
+        </ul>
+        <p>
+          The Extension's CSV export is initiated through the browser's built-in download
+          system, which saves the file to the user's device or user-selected download
+          location.
+        </p>
+
+        <h3>6.3 Legal or security disclosures</h3>
+        <p>
+          If we are legally required to disclose information, we may do so only to the
+          extent required by applicable law, regulation, legal process, or enforceable
+          governmental request.
+        </p>
+
+        <h2>7. Permissions and Why They Are Needed</h2>
+        <p>The Extension may request permissions such as the following:</p>
+
+        <h3>7.1 <code>storage</code></h3>
+        <p>Used to store:</p>
+        <ul>
+          <li>In-progress scrape state</li>
+          <li>Cached review records before export</li>
+          <li>License Key and local License status</li>
+        </ul>
+
+        <h3>7.2 <code>tabs</code></h3>
+        <p>Used to:</p>
+        <ul>
+          <li>Read the active Amazon tab URL</li>
+          <li>Navigate to the product's review page when the user starts an export</li>
+          <li>Continue the export workflow on the relevant Amazon review tab</li>
+        </ul>
+
+        <h3>7.3 <code>downloads</code></h3>
+        <p>Used to:</p>
+        <ul>
+          <li>Trigger CSV downloads generated by the Extension</li>
+        </ul>
+
+        <h3>7.4 Amazon host permissions</h3>
+        <p>Used to:</p>
+        <ul>
+          <li>Access supported Amazon product and review pages</li>
+          <li>Read the review data needed for the export feature on those pages</li>
+        </ul>
+
+        <h2>8. Retention</h2>
+        <p>
+          The Extension retains locally stored data only as long as needed to support its
+          functionality or until the data is replaced, cleared, or removed by the user.
+        </p>
+        <p>Examples:</p>
+        <ul>
+          <li>
+            In-progress scrape state may remain in local extension storage until the task
+            completes, is reset, or is overwritten.
+          </li>
+          <li>
+            Cached review records may remain in local extension storage until a new task
+            resets them or the user removes the Extension or clears extension data.
+          </li>
+          <li>Exported CSV files remain on the user's device until the user deletes them.</li>
+          <li>
+            A locally stored License Key may remain until the user clears extension data,
+            removes the Extension, or overwrites the key.
+          </li>
+        </ul>
+
+        <h2>9. User Control and Choices</h2>
+        <p>Users control whether and when the Extension is used.</p>
+        <p>You can:</p>
+        <ul>
+          <li>Start an export only when you choose to do so</li>
+          <li>Stop an in-progress export from the Extension UI</li>
+          <li>Remove downloaded CSV files from your device at any time</li>
+          <li>Remove the Extension from your browser</li>
+          <li>
+            Clear browser extension storage through your browser's extension management or
+            site/browser data controls, where applicable
+          </li>
+        </ul>
+        <p>
+          If you uninstall the Extension, browser-managed extension storage associated
+          with the Extension is generally removed by the browser, subject to browser
+          behavior and sync settings.
+        </p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>
+          The Extension is not directed to children under 13, and we do not knowingly
+          design it to collect personal information from children.
+        </p>
+
+        <h2>11. Security</h2>
+        <p>
+          We seek to minimize privacy risk by limiting handled data to what is necessary
+          for the Extension's single purpose and by keeping operational data local where
+          possible.
+        </p>
+        <p>
+          However, no software, browser environment, storage system, or transmission
+          method can be guaranteed to be 100% secure. Users should avoid using browser
+          extensions in environments they do not trust.
+        </p>
+
+        <h2>12. International Users</h2>
+        <p>
+          If you use the Extension outside your home jurisdiction, you understand that
+          locally handled data may still be subject to the laws and technical behavior of
+          your browser platform, device, and the websites you visit.
+        </p>
+        <p>
+          Because the Extension is designed to operate locally and not send scraped review
+          data to our servers, cross-border transfer by us is intentionally minimized.
+        </p>
+
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect product changes,
+          legal requirements, security needs, or publishing requirements.
+        </p>
+        <p>
+          When we update this Privacy Policy, we will revise the "Last updated" date at
+          the top of this page. Material changes should be reflected in the version
+          published at the privacy policy URL used in the browser extension listing.
+        </p>
+
+        <h2>14. Contact</h2>
+        <p>If you have questions about this Privacy Policy or the Extension's privacy practices, contact:</p>
+        <ul>
+          <li>Email: <code>REPLACE_WITH_YOUR_SUPPORT_EMAIL</code></li>
+        </ul>
+        <div class="note">
+          Before publishing, replace <code>REPLACE_WITH_YOUR_SUPPORT_EMAIL</code> with
+          your real support or privacy contact email.
+        </div>
+
+        <h2>15. Chrome Web Store Data Use Statement</h2>
+        <p>For Chrome Web Store disclosure consistency:</p>
+        <ul>
+          <li>
+            The Extension handles website content and limited browsing activity only as
+            necessary to provide its single user-facing purpose: exporting Amazon reviews
+            selected by the user.
+          </li>
+          <li>The Extension does not use handled data for advertising.</li>
+          <li>The Extension does not sell handled data.</li>
+          <li>
+            The Extension does not transfer scraped review data to our servers for
+            independent use.
+          </li>
+          <li>
+            Any handled data is limited to the functionality described in the Extension
+            listing and user interface.
+          </li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>
