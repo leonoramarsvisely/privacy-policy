@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — AI Chat Exporter</title>
+  <meta name="description" content="Privacy Policy for AI Chat Exporter browser extension (Chrome / Edge)." />
+  <style>
+    :root {
+      --ink: #0f172a;
+      --body: #475569;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --accent: #0d9488;
+      --bg: #f8fafc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--body);
+      background: linear-gradient(160deg, #ffffff 0%, var(--bg) 45%, #f0fdfa 100%);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+      box-shadow: 0 4px 14px rgba(13, 148, 136, 0.25);
+    }
+    .brand-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .meta p { margin: 4px 0; }
+    main h2 {
+      margin: 32px 0 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    main h3 {
+      margin: 20px 0 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    p { margin: 0 0 12px; }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.35rem;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--ink); font-weight: 600; }
+    code {
+      font-size: 0.9em;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      .wrap { padding: 32px 18px 64px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span class="brand-name">AI Chat Exporter</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <p><strong>Last updated:</strong> 2026-09-28</p>
+        <p><strong>Product:</strong> AI Chat Exporter browser extension (Chrome / Edge, Manifest V3)</p>
+      </div>
+    </header>
+
+    <main>
+      <h2>1. Overview</h2>
+      <p>
+        AI Chat Exporter helps you export conversations from supported AI chat websites to local files (PDF, Word, Markdown, and related formats). This policy explains what data is handled and why.
+      </p>
+
+      <h2>2. Data we process</h2>
+
+      <h3>2.1 Processed on your device (local)</h3>
+      <p>The extension may store locally in browser storage:</p>
+      <ul>
+        <li>Export preferences (PDF options, filename templates, mute/auto-close settings)</li>
+        <li>Temporary session basket items (conversation metadata you choose to keep)</li>
+        <li>Optional Notion Integration token and parent page ID <strong>if you enter them</strong></li>
+      </ul>
+      <p>
+        Conversation text and images used for an export are read from the AI chat page you already opened and processed in the extension (or in that page context) to build the download file. This data stays on your device unless you clear extension storage or uninstall.
+      </p>
+
+      <h3>2.2 Permissions-related access (not sold)</h3>
+      <p>To export a chat, the extension may:</p>
+      <ul>
+        <li>Read the active AI chat page DOM / APIs needed to extract messages</li>
+        <li>Fetch image or attachment URLs that appear in that chat (including CDNs) so they can be embedded in the export</li>
+        <li>Write files via the browser Downloads API to your download folder</li>
+        <li>Call Notion’s API <strong>only if</strong> you configured your own Notion Integration credentials</li>
+      </ul>
+      <p>We do <strong>not</strong> use this access to build advertising profiles.</p>
+
+      <h3>2.3 Network / remote servers</h3>
+      <p>
+        In the current shipped configuration, <strong>product backend APIs are disabled</strong>. The extension does not register accounts or sync chat history to an AI Chat Exporter server.
+      </p>
+      <p>
+        When you export, your browser may request resources from <strong>third-party sites you already use</strong> (the AI product or its CDN). Those requests are subject to those sites’ own policies.
+      </p>
+      <p>
+        If you use optional Notion export, content is sent to <strong>Notion</strong> under your Integration’s permissions and Notion’s policies.
+      </p>
+
+      <h2>3. What we do not collect</h2>
+      <ul>
+        <li>We do not sell personal data</li>
+        <li>We do not use chat content for advertising</li>
+        <li>We do not require an account for basic local export features in the current version</li>
+      </ul>
+
+      <h2>4. Children</h2>
+      <p>
+        AI Chat Exporter is not directed at children under 13. Do not use the extension if you are under the age required in your jurisdiction for this type of software.
+      </p>
+
+      <h2>5. Data retention</h2>
+      <p>
+        Local data remains until you clear it in the extension, clear browser data, or uninstall. Notion retention follows your Notion workspace settings when that feature is used.
+      </p>
+
+      <h2>6. Your choices</h2>
+      <ul>
+        <li>Remove Notion credentials in Options to stop any Notion API calls</li>
+        <li>Clear site data / extension storage, or uninstall, to remove local preferences and basket data</li>
+        <li>Limit which chats you open and export</li>
+      </ul>
+
+      <h2>7. Changes</h2>
+      <p>
+        We may update this policy when features change. The “Last updated” date above will change; material changes should also be reflected in the store listing.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        If you have questions about this privacy policy, please use the support options provided on the extension’s Chrome Web Store or Microsoft Edge Add-ons listing.
+        You may also replace this page’s contact details with your public support email before hosting.
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; AI Chat Exporter</p>
+    </footer>
+  </div>
+</body>
+</html>
