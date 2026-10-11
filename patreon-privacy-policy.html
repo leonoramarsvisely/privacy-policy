@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Patreon Media Saver</title>
+  <meta name="description" content="Privacy Policy for Patreon Media Saver browser extension (Chrome / Edge)." />
+  <style>
+    :root {
+      --ink: #102a43;
+      --body: #486581;
+      --muted: #627d98;
+      --line: #d9e2ec;
+      --accent: #0d9488;
+      --bg: #f0f4f8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--body);
+      background: linear-gradient(160deg, #ffffff 0%, var(--bg) 45%, #ecfdf5 100%);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+      box-shadow: 0 4px 14px rgba(13, 148, 136, 0.28);
+    }
+    .brand-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .meta p { margin: 4px 0; }
+    main h2 {
+      margin: 32px 0 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    main h3 {
+      margin: 20px 0 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    p { margin: 0 0 12px; }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.35rem;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--ink); font-weight: 600; }
+    code {
+      font-size: 0.9em;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      .wrap { padding: 32px 18px 64px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span class="brand-name">Patreon Media Saver</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <p><strong>Last updated:</strong> 2026-10-11</p>
+        <p><strong>Product:</strong> Patreon Media Saver browser extension (Chrome / Edge, Manifest V3)</p>
+      </div>
+    </header>
+
+    <main>
+      <h2>1. Overview</h2>
+      <p>
+        Patreon Media Saver helps you save videos, audio, images, and attachments from Patreon posts
+        <strong>you can already access</strong> while logged in. It does not bypass login, membership paywalls, or DRM.
+        This extension is not affiliated with Patreon, Inc.
+      </p>
+
+      <h2>2. Data on your device</h2>
+      <p>Stored locally with browser extension storage:</p>
+      <ul>
+        <li>Settings (filename template, concurrent downloads, on-page controls, history preference)</li>
+        <li>Saved creators and scanned library metadata</li>
+        <li>Download queue and history</li>
+      </ul>
+      <p>This data stays in your browser profile unless you clear extension storage or uninstall.</p>
+
+      <h2>3. Permissions</h2>
+      <ul>
+        <li><code>storage</code> / <code>unlimitedStorage</code> — settings, creators, library metadata, and download tasks</li>
+        <li><code>downloads</code> — save files through the browser download manager</li>
+        <li><code>tabs</code> — detect the active Patreon tab; open Downloads, options, and feedback links</li>
+        <li><code>scripting</code> — inject the Patreon content script to detect accessible media and optional on-page controls</li>
+        <li><code>declarativeNetRequest</code> — set Referer/Origin headers for Mux / Patreon stream segments you can already play</li>
+        <li><code>offscreen</code> — run HLS remux and large blob saves outside the service worker</li>
+        <li>Host access to Patreon and Mux — detect and download media you can already open (no <code>&lt;all_urls&gt;</code>)</li>
+      </ul>
+
+      <h2>4. Network / third parties</h2>
+      <p>
+        Media bytes are requested from Patreon / CDN hosts you already use while logged in. Those requests follow those services’ own policies.
+      </p>
+      <p>
+        Optional feedback and uninstall surveys may open forms hosted by
+        <a href="https://tally.so/" rel="noopener noreferrer">Tally</a>.
+        Responses you submit there are processed under Tally’s terms and privacy policy.
+      </p>
+      <p>
+        In the current shipped configuration, the extension does not sync your media library or download history to our servers for normal use.
+      </p>
+
+      <h2>5. What we do not collect</h2>
+      <ul>
+        <li>Patreon passwords</li>
+        <li>Session cookies sent to our servers</li>
+        <li>Your media files on our servers</li>
+        <li>Sale of personal data for advertising</li>
+      </ul>
+      <p>Please never paste passwords, cookies, or session tokens into feedback forms.</p>
+
+      <h2>6. Children</h2>
+      <p>
+        This product is not directed at children under 13. Use only if you meet the age required in your jurisdiction for this type of software.
+      </p>
+
+      <h2>7. Your choices</h2>
+      <ul>
+        <li>Clear download history in the extension when available</li>
+        <li>Revoke permissions or uninstall via <code>chrome://extensions</code> or Edge extensions settings</li>
+        <li>Do not submit sensitive credentials in feedback forms</li>
+      </ul>
+
+      <h2>8. Changes</h2>
+      <p>
+        We may update this policy. The “Last updated” date will change; material changes will be reflected on the store listing when required.
+      </p>
+
+      <h2>9. Contact</h2>
+      <p>
+        For privacy questions, use the <strong>Feedback</strong> button in the extension or the support contact on the
+        Chrome Web Store / Microsoft Edge Add-ons listing.
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; Patreon Media Saver</p>
+    </footer>
+  </div>
+</body>
+</html>
